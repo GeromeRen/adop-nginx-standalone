@@ -1,6 +1,5 @@
 proxy:
   container_name: proxy
-  restart: always
   image: csg/nginx:1.0
   net: ${CUSTOM_NETWORK_NAME}
   ports:

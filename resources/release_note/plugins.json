@@ -15,14 +15,14 @@
                     "title": "gitlab", 
                     "img": "img/gitlab.png", 
                     "description": "Code Repository & Collabration on Code", 
-                    "link": "http://120.78.83.172"
+                    "link": "http://10.92.126.83"
                 }, 
                 {
                     "id": "redmine", 
                     "title": "redmine", 
                     "img": "img/redmine.png", 
                     "description": "Flexible Project Management", 
-                    "link": "http://120.78.83.127/redmine"
+                    "link": "/redmine"
                 }, 
                 {
                     "id": "sonarqube", 

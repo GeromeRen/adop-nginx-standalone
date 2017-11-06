@@ -1,0 +1,21 @@
+proxy:
+  container_name: proxy
+  restart: always
+  image: csg/nginx:1.0
+  net: ${CUSTOM_NETWORK_NAME}
+  ports:
+    - "80:80"
+    - "443:443"
+  environment:
+    - "constraint:tier==public"
+    - "LDAP_SERVER=${LDAP_SERVER}"
+    - "LDAP_USERNAME=${LDAP_ADMIN},${LDAP_FULL_DOMAIN}"
+    - "LDAP_PASSWORD=${LDAP_PWD}"
+    - "LDAP_USER_BASE_DN=${LDAP_USER_BASE_DN}"
+    - "LDAP_GROUP_ATTRIBUTE=member"
+    - "LDAP_USER_ID_ATTRIBUTE=cn"
+    - "LDAP_USER_OBJECT_CLASS=inetOrgPerson"
+  volumes:
+    - /resources/configuration:/etc/nginx
+    - /resources/release_note:/usr/share/nginx/html
+    - /var/log:/var/log

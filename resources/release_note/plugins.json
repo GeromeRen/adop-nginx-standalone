@@ -1,79 +1,195 @@
 {
-        "core" : [
-            {
-                "type": "Tool Links",
-                "components" : [
-                    {
-                        "id": "jenkins",
-                        "title": "jenkins",
-                        "img": "img/jenkins.png",
-                        "description": "Continuous Integration & Automation Server",
-                        "link": "/jenkins/"
-                    },
-                    {
-                        "id": "gerrit",
-                        "title": "gerrit",
-                        "img": "img/gerrit.jpg",
-                        "description": "Git Repository Management & Code Review Tool",
-                        "link": "/gerrit/"
-                    },
-                    {
-                        "id": "sonar",
-                        "title": "sonar",
-                        "img": "img/sonar.png",
-                        "description": "Static Code Analysis",
-                        "link": "/sonar/"
-                    },
-                    {
-                        "id": "nexus",
-                        "title": "nexus",
-                        "img": "img/nexus.png",
-                        "description": "Software Repository Manager",
-                        "link": "/nexus/"
-                    },
-                    {
-                        "id": "kibana",
-                        "title": "kibana",
-                        "img": "img/kibana.png",
-                        "description": "Kibana Dashboard for Logging (ELK)",
-                        "link": "/app/kibana"
-                    },
-                    {
-                        "id": "selenium",
-                        "title": "selenium",
-                        "img": "img/selenium.png",
-                        "description": "Selenium Grid for Automated Testing",
-                        "link": "",
-                        "linkCreate": {
-                            "host": "selenium",
-                            "endPath": "//grid/console"
-                        }
-                    },
-                    {
-                        "id": "sensu",
-                        "title": "sensu",
-                        "img": "img/sensu.png",
-                        "description": "Monitoring",
-                        "link": "/sensu/"
-                    },
-                    {
-                        "id": "ldap-ltb",
-                        "title": "ltb",
-                        "img": "img/ltb.png",
-                        "description": "Application that allows users to change their password in an LDAP directory",
-                        "link": "/ldap-ltb/"
-                    },
-                    {
-                        "id": "ldap-phpadmin",
-                        "title": "phpldapadmin",
-                        "img": "img/phpldapadmin.png",
-                        "description": "Browser to manage your LDAP server",
-                        "link": "/ldap-phpadmin/"
-                    }
-                ]
-            }
-        ],
-        "blueprints": [
-            {"url": "bp/demo-release-note.html"}
-        ]
-    }
+    "core": [
+        {
+            "type": "Tool Links", 
+            "components": [
+                {
+                    "id": "jenkins", 
+                    "title": "jenkins", 
+                    "img": "img/jenkins.png", 
+                    "description": "Continuous Integration & Automation Server", 
+                    "link": "/jenkins/"
+                }, 
+                {
+                    "id": "gitlab", 
+                    "title": "gitlab", 
+                    "img": "img/gitlab.png", 
+                    "description": "Code Repository & Collabration on Code", 
+                    "link": "http://120.78.83.172"
+                }, 
+                {
+                    "id": "redmine", 
+                    "title": "redmine", 
+                    "img": "img/redmine.png", 
+                    "description": "Flexible Project Management", 
+                    "link": "http://120.78.83.127/redmine"
+                }, 
+                {
+                    "id": "sonarqube", 
+                    "title": "sonarqube", 
+                    "img": "img/sonar.png", 
+                    "description": "Code Analysis", 
+                    "link": "/sonar"
+                }, 
+                {
+                    "id": "nexusoss", 
+                    "title": "nexusoss", 
+                    "img": "img/nexus.png", 
+                    "description": "Advanced Repository Manager", 
+                    "link": "/nexus/"
+                }, 
+                {
+                    "id": "ldap-ltb", 
+                    "title": "LDAP LTB", 
+                    "img": "img/ltb.png", 
+                    "description": "Application that allows users to change their password in an LDAP directory", 
+                    "link": "/ldap-ltb/"
+                },
+                {
+                    "id": "ldap-admin",
+                    "title": "LDAP Admin",
+                    "img": "img/phpldapadmin.png",
+                    "description": "Browser to manage your LDAP server",
+                    "link": "/ldap-phpadmin/"
+                }
+            ]
+        }, 
+        {
+            "type": "MicroPaaS in Development", 
+            "components": [
+                {
+                    "id": "k8s-dev-kong", 
+                    "title": "API Gateway", 
+                    "img": "img-k8s/kong.png", 
+                    "description": "API Gateway", 
+                    "link": "http://120.78.81.170:31880/"
+                },
+                {
+                    "id": "k8s-dev-dashboard",
+                    "title": "Docker Container Manager",
+                    "img": "img-k8s/kubernetes.png",
+                    "description": "Docker Container manager",
+                    "link": "http://120.78.81.170:30001/"
+                },
+                {
+                    "id": "k8s-dev-hystrix",
+                    "title": "Hystrix",
+                    "img": "img-k8s/hystrix.png",
+                    "description": "Hystrix",
+                    "link": "http://120.78.81.170:31040/"
+                }
+                ,
+                {
+                    "id": "k8s-dev-kibana",
+                    "title": "Kibana",
+                    "img": "img-k8s/kibana.png",
+                    "description": "Kibana",
+                    "link": "http://120.78.81.170:30003/app/kibana"
+                }
+                ,
+                {
+                    "id": "k8s-dev-grafana",
+                    "title": "Grafana",
+                    "img": "img-k8s/grafana.png",
+                    "description": "Grafana",
+                    "link": "http://120.78.81.170:30002/"
+                }
+                ,
+                {
+                    "id": "k8s-dev-eureka",
+                    "title": "Eureka",
+                    "img": "img-k8s/eureka.png",
+                    "description": "Eureka",
+                    "link": "http://120.78.81.170:31010/"
+                }
+                ,
+                {
+                    "id": "k8s-dev-zipkin",
+                    "title": "Zipkin",
+                    "img": "img-k8s/zibkin.png",
+                    "description": "Zipkin",
+                    "link": "http://120.78.81.170:31411/zipkin/"
+                }
+                ,
+                {
+                    "id": "k8s-dev-springadmin",
+                    "title": "spring admin",
+                    "img": "img-k8s/admin.png",
+                    "description": "spring admin",
+                    "link": "http://120.78.81.170:31808/"
+                }
+            ]
+        }, 
+        {
+            "type": "MicroPaaS in Staging", 
+            "components": [
+                {
+                    "id": "k8s-staging-kong", 
+                    "title": "API Gateway", 
+                    "img": "img-k8s/kong.png", 
+                    "description": "API Gateway", 
+                    "link": "http://120.78.83.131:31880/"
+                },
+                {
+                    "id": "k8s-staging-dashboard",
+                    "title": "Docker Container Manager",
+                    "img": "img-k8s/kubernetes.png",
+                    "description": "Docker Container manager",
+                    "link": "http://120.78.83.131:30001/"
+                },
+                {
+                    "id": "k8s-staging-hystrix",
+                    "title": "Hystrix",
+                    "img": "img-k8s/hystrix.png",
+                    "description": "Hystrix",
+                    "link": "http://120.78.83.131:31040/"
+                }
+                ,
+                {
+                    "id": "k8s-staging-kibana",
+                    "title": "Kibana",
+                    "img": "img-k8s/kibana.png",
+                    "description": "Kibana",
+                    "link": "http://120.78.83.131:30003/app/kibana"
+                }
+                ,
+                {
+                    "id": "k8s-staging-grafana",
+                    "title": "Grafana",
+                    "img": "img-k8s/grafana.png",
+                    "description": "Grafana",
+                    "link": "http://120.78.83.131:30002/"
+                }
+                ,
+                {
+                    "id": "k8s-staging-eureka",
+                    "title": "Eureka",
+                    "img": "img-k8s/eureka.png",
+                    "description": "Eureka",
+                    "link": "http://120.78.83.131:31010/"
+                }
+                ,
+                {
+                    "id": "k8s-staging-zipkin",
+                    "title": "Zipkin",
+                    "img": "img-k8s/zibkin.png",
+                    "description": "Zipkin",
+                    "link": "http://120.78.83.131:31411/zipkin/"
+                }
+                ,
+                {
+                    "id": "k8s-staging-springadmin",
+                    "title": "spring admin",
+                    "img": "img-k8s/admin.png",
+                    "description": "spring admin",
+                    "link": "http://120.78.83.131:31808/"
+                }
+            ]
+        }
+    ], 
+    "blueprints": [
+        {
+            "url": "bp/demo-release-note.html"
+        }
+    ]
+}

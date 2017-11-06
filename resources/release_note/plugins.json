@@ -11,18 +11,11 @@
                         "link": "/jenkins/"
                     },
                     {
-                        "id": "gitlab",
-                        "title": "gitlab",
-                        "img": "img/jenkins.png",
-                        "description": "TBD",
-                        "link": "/tbd/"
-                    },
-                    {
-                        "id": "redmine",
-                        "title": "redmine",
-                        "img": "img/redmine.png",
-                        "description": "TBD",
-                        "link": "/redmine/"
+                        "id": "gerrit",
+                        "title": "gerrit",
+                        "img": "img/gerrit.jpg",
+                        "description": "Git Repository Management & Code Review Tool",
+                        "link": "/gerrit/"
                     },
                     {
                         "id": "sonar",
@@ -37,6 +30,31 @@
                         "img": "img/nexus.png",
                         "description": "Software Repository Manager",
                         "link": "/nexus/"
+                    },
+                    {
+                        "id": "kibana",
+                        "title": "kibana",
+                        "img": "img/kibana.png",
+                        "description": "Kibana Dashboard for Logging (ELK)",
+                        "link": "/app/kibana"
+                    },
+                    {
+                        "id": "selenium",
+                        "title": "selenium",
+                        "img": "img/selenium.png",
+                        "description": "Selenium Grid for Automated Testing",
+                        "link": "",
+                        "linkCreate": {
+                            "host": "selenium",
+                            "endPath": "//grid/console"
+                        }
+                    },
+                    {
+                        "id": "sensu",
+                        "title": "sensu",
+                        "img": "img/sensu.png",
+                        "description": "Monitoring",
+                        "link": "/sensu/"
                     },
                     {
                         "id": "ldap-ltb",

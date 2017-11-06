@@ -21,6 +21,8 @@ RUN apt-get update \
 
 # See http://wiki.nginx.org/InstallOptions
 RUN mkdir /var/log/nginx \
+    && touch /var/log/nginx/error.log \
+    && touch /var/log/nginx/access.log \
     && mkdir -p /etc/nginx/sites-enabled \
     && mkdir -p /usr/share/nginx/html \
     && cd ~ \
